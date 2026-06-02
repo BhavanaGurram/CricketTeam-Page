@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#18004e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    z-index:100;
+}
+
+header h1{
+    font-size:55px;
+}
+
+/* Main Background */
+
+.hero-section{
+    background-image:url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000003226_1714596295_pics1.png");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    position:relative;
+    padding-top:140px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero-section > *{
+    position:relative;
+    z-index:2;
+}
+
+.hero-section h2{
+    color:white;
+    text-align:center;
+    font-size:55px;
+    margin-top:20px;
+}
+
+.hero-section h3{
+    color:white;
+    text-align:center;
+    font-size:40px;
+    margin-top:30px;
+}
+
+/* Coaches */
+
+.team-section{
+    display:flex;
+    justify-content:center;
+    gap:140px;
+    margin-top:90px;
+}
+
+.member-card{
+    position:relative;
+}
+
+.member-card img{
+    width:320px;
+    height:220px;
+    object-fit:cover;
+    border:8px solid white;
+    border-radius:20px;
+}
+
+.member-info{
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+
+/* Players */
+
+.players-container{
+    width:650px;
+    margin:120px auto;
+    background:white;
+    border-radius:25px;
+    padding:20px;
+}
+
+.players-title{
+    color:#18004e !important;
+    font-size:40px !important;
+    margin-bottom:20px;
+}
+
+.players-list{
+    list-style:none;
+    max-height:450px;
+    overflow-y:scroll;
+}
+
+.player-item{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.player-item img{
+    width:450px;
+    border-radius:10px;
+}
+
+.player-item p{
+    font-size:22px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* Table */
+
+.ranking-table{
+    width:90%;
+    margin:60px auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#18004e;
+    color:white;
+    padding:20px;
+    text-align:left;
+    font-size:28px;
+}
+
+td{
+    background:white;
+    padding:25px;
+    font-size:24px;
+    border-bottom:1px solid #eee;
+}
+
+/* Footer */
+
+footer{
+    background:#18004e;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer h2{
+    margin:20px 0;
+}
